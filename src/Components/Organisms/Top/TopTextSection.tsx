@@ -30,7 +30,7 @@ const TopTextSection: React.FC = () => {
           <p>{aboutTxt.skill.editor}</p>
         </InnerSection>
       </Section>
-      
+    
     </TextSection>
   );
 };
