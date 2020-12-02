@@ -13,6 +13,7 @@ const Portfolio = () => {
         <Header />
         <PortfolioTitle />
 
+        <LayoutRow>
         <Row>
           <LayoutCol>
             <Project {...props} />
@@ -35,6 +36,7 @@ const Portfolio = () => {
             <Project {...props} />
           </LayoutCol>
         </Row>
+        </LayoutRow>
 
         <Footer />
       </div>
@@ -44,6 +46,10 @@ const Portfolio = () => {
 const Row = styled.div`
   display: flex;
   margin: 16px;
+`;
+
+const LayoutRow = styled.div`
+  margin-top: 128px;
 `;
 
 const LayoutCol = styled.div`

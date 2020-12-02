@@ -10,8 +10,9 @@ const PortfolioTitle = () => {
 
 const Title = styled.h1`
   text-align: center;
-  margin: 50px auto;
+  margin: 0 auto;
   letter-spacing: 6px;
+  padding-top: 217px;
 `;
 
 export default PortfolioTitle;

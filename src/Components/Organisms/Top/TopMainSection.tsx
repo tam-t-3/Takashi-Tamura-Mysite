@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import TopName from "../../Atoms/TopStrings/TopTitle";
+import TopTitle from "../../Atoms/TopStrings/TopTitle";
 import MyIcon from "../../Atoms/MyPhoto";
 
 const TopMainSection: React.FC = () => {
   return (
     <LayoutMain>
 
-      <TopName />
+      <TopTitle />
 
       <LayoutMyIcon>
         <MyIcon /> 
