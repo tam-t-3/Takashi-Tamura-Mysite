@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import TextAreaComp from "../../Atoms/TopStrings/TextAreaComp";
+import TextAreaComp from "../../Atoms/TopStrings/TextArea";
 import { aboutTxt, subTitle } from "../../../Constant/strings";
 
 const TopTextSection: React.FC = () => {

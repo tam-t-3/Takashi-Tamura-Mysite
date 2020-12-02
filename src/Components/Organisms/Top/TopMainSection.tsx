@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import TopName from "../../Atoms/TopName";
-import MyIcon from "../../Atoms/MyIcon";
+import TopName from "../../Atoms/TopStrings/TopTitle";
+import MyIcon from "../../Atoms/MyPhoto";
 
 const TopMainSection: React.FC = () => {
   return (

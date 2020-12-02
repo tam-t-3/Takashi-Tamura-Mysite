@@ -1,16 +1,14 @@
 import React from "react";
-import Footer from "../Organisms/Footer";
-import Header from "../Organisms/Header";
-import Project from "../Molecules/project";
-import { works } from "../../Constant/projects";
+import Project from "../../Molecules/project";
+import { works } from "../../../Constant/projects";
 import styled from "styled-components";
-import PortfolioTitle from "../Atoms/PortfolioStrings/PortfolioTitle";
+import PortfolioTitle from "../../Atoms/PortfolioStrings/PortfolioTitle";
 
 const Portfolio = () => {
   const props = works[0];
-    return (
-      <div>
-        <Header />
+  return (
+    <PortfolioDiv>
+      
         <PortfolioTitle />
 
         <Row>
@@ -35,11 +33,14 @@ const Portfolio = () => {
             <Project {...props} />
           </LayoutCol>
         </Row>
-
-        <Footer />
-      </div>
+        
+    </PortfolioDiv>
   );
 };
+
+const PortfolioDiv = styled.div`
+  margin: 32px 64px;
+`;
 
 const Row = styled.div`
   display: flex;

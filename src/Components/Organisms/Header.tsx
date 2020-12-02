@@ -1,13 +1,13 @@
 import React from "react";
 import Logo from "../Atoms/Logo";
-import NavList from "../Molecules/NavList";
+import Humberger from "../Molecules/Humberger";
 import styled from "styled-components";
 
 const Header = () => {
   return (
     <LayoutHeader>
       <Logo />
-      <NavList />
+      <Humberger />
     </LayoutHeader>
   );
 };
