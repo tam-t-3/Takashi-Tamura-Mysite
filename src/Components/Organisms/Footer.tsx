@@ -27,14 +27,12 @@ const Footer = () => {
 };
 
 const LayoutFooter = styled.div`
-  width: 100%;
-  height: 64px;
-  position: relative;
+width: 100%;
+padding: 32px;
+box-sizing: border-box;
 `
 
 const LayoutLink = styled.div`
-  position: absolute;
-  bottom: 0;
 `
 
 const LayoutIcon = styled.a`
