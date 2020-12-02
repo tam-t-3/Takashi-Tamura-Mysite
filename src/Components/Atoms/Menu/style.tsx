@@ -11,7 +11,7 @@ export const Trigger = styled.a`
   box-sizing: border-box;
   position: relative;
   width: 26px;
-  height: 24px;
+  height: 19px;
   cursor: pointer;
 `;
 
