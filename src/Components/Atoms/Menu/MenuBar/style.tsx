@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-// メニューバーのスタイル、外部からの値を渡すことで、動的にスタイルを調整する
+// メニューバーのスタイル、外部からの値を渡すことで、動的にスタイルを調整
 export const StyledMenuBar = styled.span<{ transform: string; width: string }>`
   display: inline-block;
   transition: all 0.4s;
