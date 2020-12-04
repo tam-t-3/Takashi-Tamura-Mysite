@@ -14,7 +14,7 @@ const Header = () => {
 
 const LayoutHeader = styled.div`
   width: 100%;
-  padding: 32px;
+  padding: 32px 64px;
   box-sizing: border-box;
   position: fixed;
   top: 0;
