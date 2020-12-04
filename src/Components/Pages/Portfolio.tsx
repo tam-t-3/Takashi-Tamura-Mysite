@@ -5,6 +5,7 @@ import Project from "../Molecules/project";
 import { works } from "../../Constant/projects";
 import styled from "styled-components";
 import PortfolioTitle from "../Atoms/PortfolioStrings/PortfolioTitle";
+import { sp, tab, pc } from "../../media";
 
 const Portfolio = () => {
   const props = works[0];
@@ -15,26 +16,42 @@ const Portfolio = () => {
 
         <LayoutRow>
         <Row>
-          <LayoutCol>
-            <Project {...props} />
-          </LayoutCol>
-          <LayoutCol>
-            <Project {...props} />
-          </LayoutCol>
-          <LayoutCol>
-            <Project {...props} />
-          </LayoutCol>
+          <SpBox>
+            <LayoutCol>
+              <Project {...props} />
+            </LayoutCol>
+          </SpBox>
+
+          <TabBox>
+            <LayoutCol>
+              <Project {...props} />
+            </LayoutCol>
+          </TabBox>
+
+          <PcBox>
+            <LayoutCol>
+              <Project {...props} />
+            </LayoutCol>
+          </PcBox>
         </Row>
         <Row>
-          <LayoutCol>
-            <Project {...props} />
-          </LayoutCol>
-          <LayoutCol>
-            <Project {...props} />
-          </LayoutCol>
-          <LayoutCol>
-            <Project {...props} />
-          </LayoutCol>
+          <SpBox>
+            <LayoutCol>
+              <Project {...props} />
+            </LayoutCol>
+          </SpBox>
+
+          <TabBox>
+            <LayoutCol>
+              <Project {...props} />
+            </LayoutCol>
+          </TabBox>
+
+          <PcBox>
+            <LayoutCol>
+              <Project {...props} />
+            </LayoutCol>
+          </PcBox>
         </Row>
         </LayoutRow>
 
@@ -54,6 +71,42 @@ const LayoutRow = styled.div`
 
 const LayoutCol = styled.div`
   margin: 16px;
+`;
+
+const SpBox = styled.div`
+    ${sp`
+        display: none;
+    `}
+    ${tab`
+        display: none;
+    `}
+    ${pc`
+        display: block;
+    `}
+`;
+
+const TabBox = styled.div`
+    ${sp`
+        display: none;
+    `}
+    ${tab`
+        display: block;
+    `}
+    ${pc`
+        display: block;
+    `}
+`;
+
+const PcBox = styled.div`
+    ${sp`
+        display: block;
+    `}
+    ${tab`
+        display: block;
+    `}
+    ${pc`
+        display: block;
+    `}
 `;
 
 export default Portfolio;
