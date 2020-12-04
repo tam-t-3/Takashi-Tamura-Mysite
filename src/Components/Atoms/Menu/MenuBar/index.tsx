@@ -6,6 +6,7 @@ type Props = {
   index: number;
 };
 
+// メニューバーの描画
 const MenuBar: React.FC<Props> = ({ isActive, index }) => {
   const props = isActive ? after[index] : before[index];
   return <S.StyledMenuBar {...props} />;

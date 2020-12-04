@@ -3,57 +3,123 @@ import Footer from "../Organisms/Footer";
 import Header from "../Organisms/Header";
 import Project from "../Molecules/project";
 import { works } from "../../Constant/projects";
-import styled from "styled-components";
-import PortfolioTitle from "../Atoms/PortfolioTitle";
+import styled, { keyframes } from "styled-components";
+import PortfolioTitle from "../Atoms/PortfolioStrings/PortfolioTitle";
+import { sp, tab, pc } from "../../media";
 
 const Portfolio = () => {
   const props = works[0];
-  return (
-    <PortfolioDiv>
-      
+    return (
+      <div>
         <Header />
-        <PortfolioTitle />
+        <FadeIn>
+          <PortfolioTitle />
 
-        <Row>
-          <LayoutCol>
-            <Project {...props} />
-          </LayoutCol>
-          <LayoutCol>
-            <Project {...props} />
-          </LayoutCol>
-          <LayoutCol>
-            <Project {...props} />
-          </LayoutCol>
-        </Row>
-        <Row>
-          <LayoutCol>
-            <Project {...props} />
-          </LayoutCol>
-          <LayoutCol>
-            <Project {...props} />
-          </LayoutCol>
-          <LayoutCol>
-            <Project {...props} />
-          </LayoutCol>
-        </Row>
+          <LayoutRow>
+          <Row>
+            <SpBox>
+              <LayoutCol>
+                <Project {...props} />
+              </LayoutCol>
+            </SpBox>
 
+            <TabBox>
+              <LayoutCol>
+                <Project {...props} />
+              </LayoutCol>
+            </TabBox>
+
+            <PcBox>
+              <LayoutCol>
+                <Project {...props} />
+              </LayoutCol>
+            </PcBox>
+          </Row>
+          <Row>
+            <SpBox>
+              <LayoutCol>
+                <Project {...props} />
+              </LayoutCol>
+            </SpBox>
+
+            <TabBox>
+              <LayoutCol>
+                <Project {...props} />
+              </LayoutCol>
+            </TabBox>
+
+            <PcBox>
+              <LayoutCol>
+                <Project {...props} />
+              </LayoutCol>
+            </PcBox>
+          </Row>
+          </LayoutRow>
+        </FadeIn>
         <Footer />
-        
-    </PortfolioDiv>
+      </div>
   );
 };
-
-const PortfolioDiv = styled.div`
-  margin: 32px 64px;
-`;
 
 const Row = styled.div`
   display: flex;
   margin: 16px;
 `;
 
+const LayoutRow = styled.div`
+  margin-top: 32px;
+`;
+
 const LayoutCol = styled.div`
   margin: 16px;
+`;
+
+const SpBox = styled.div`
+    ${sp`
+        display: none;
+    `}
+    ${tab`
+        display: none;
+    `}
+    ${pc`
+        display: block;
+    `}
+`;
+
+const TabBox = styled.div`
+    ${sp`
+        display: none;
+    `}
+    ${tab`
+        display: block;
+    `}
+    ${pc`
+        display: block;
+    `}
+`;
+
+const PcBox = styled.div`
+    ${sp`
+        display: block;
+    `}
+    ${tab`
+        display: block;
+    `}
+    ${pc`
+        display: block;
+    `}
+`;
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
+const FadeIn = styled.div`
+  animation: ${fadeIn} 1s ease-in-out;
 `;
 
 export default Portfolio;

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import TriggerMenu from "../Atoms/Menu";
 
-const NavList = () => {
+const Humberger = () => {
   return (
     <NavDiv id="navArea">
       <TriggerMenu />
@@ -14,4 +14,4 @@ const NavDiv = styled.nav`
   float: right;
 `;
 
-export default NavList;
+export default Humberger;

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import * as S from "./style";
 import MenuBar from "./MenuBar";
-import { navigation } from "../../../Constant/strings";
-import { Link } from "react-router-dom";
 import NavLink from "../LinkAnimation";
+import { navigation } from "../../../Constant/strings";
 
 const TriggerMenu: React.FC = ({}) => {
   const [isActive, setActive] = useState(false);
