@@ -1,5 +1,5 @@
 import React from "react";
-import { navigation } from "../../Constant/strings";
+import { navigation } from "../../../Constant/strings";
 import styled from "styled-components";
 
 const PortfolioTitle = () => {
@@ -10,9 +10,9 @@ const PortfolioTitle = () => {
 
 const Title = styled.h1`
   text-align: center;
-  margin: 50px auto;
+  margin: 0 auto;
   letter-spacing: 6px;
-  font-weight: lighter;
+  padding-top: 217px;
 `;
 
 export default PortfolioTitle;

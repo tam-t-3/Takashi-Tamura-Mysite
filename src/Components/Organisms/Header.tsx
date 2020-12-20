@@ -1,20 +1,20 @@
 import React from "react";
 import Logo from "../Atoms/Logo";
-import NavList from "../Molecules/NavList";
+import Humberger from "../Molecules/Humberger";
 import styled from "styled-components";
 
 const Header = () => {
   return (
     <LayoutHeader>
       <Logo />
-      <NavList />
+      <Humberger />
     </LayoutHeader>
   );
 };
 
 const LayoutHeader = styled.div`
   width: 100%;
-  padding: 32px;
+  padding: 32px 64px;
   box-sizing: border-box;
   position: fixed;
   top: 0;

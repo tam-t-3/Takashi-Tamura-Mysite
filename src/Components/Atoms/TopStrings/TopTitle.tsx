@@ -1,8 +1,8 @@
 import React from "react";
-import { aboutTxt } from "../../Constant/strings";
+import { aboutTxt } from "../../../Constant/strings";
 import styled from "styled-components";
 
-const TopName = () => {
+const TopTitle = () => {
   return (
     <div>
         <Title>{aboutTxt.myname}</Title>
@@ -16,4 +16,4 @@ const Title = styled.h1`
   margin: 0 auto;
 `;
 
-export default TopName;
+export default TopTitle;

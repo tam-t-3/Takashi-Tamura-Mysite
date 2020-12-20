@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <LayoutFooter>
       <LayoutLink>
-        <LayoutIcon href="https://twitter.com/@20_tamura_t" target="_blank">
+        <LayoutIcon href="https://twitter.com/takashi_t_20" target="_blank">
           <NavLink>{<FontAwesomeIcon icon={faTwitter} />}</NavLink>
         </LayoutIcon>
 
@@ -27,14 +27,12 @@ const Footer = () => {
 };
 
 const LayoutFooter = styled.div`
-  width: 100%;
-  height: 64px;
-  position: relative;
+width: 100%;
+padding: 32px 64px;
+box-sizing: border-box;
 `
 
 const LayoutLink = styled.div`
-  position: absolute;
-  bottom: 0;
 `
 
 const LayoutIcon = styled.a`
