@@ -20,7 +20,8 @@ const Project: React.FC<Props> = ({ title, description, thumb }) => {
   );
 };
 
-const Layout = styled.div``;
+const Layout = styled.div`
+`;
 
 const Title = styled.h3`
   font-weight: normal;
