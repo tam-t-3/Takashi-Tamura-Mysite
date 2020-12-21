@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <LayoutFooter>
       <LayoutLink>
-        <LayoutIcon href="https://twitter.com/takashi_t_20" target="_blank">
+        <LayoutIcon href="https://twitter.com/@TakashiTamura_9" target="_blank">
           <NavLink>{<FontAwesomeIcon icon={faTwitter} />}</NavLink>
         </LayoutIcon>
 
