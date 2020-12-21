@@ -8,7 +8,8 @@ import PortfolioTitle from "../Atoms/PortfolioStrings/PortfolioTitle";
 import { sp, tab, pc } from "../../media";
 
 const Portfolio = () => {
-  const props = works[0];
+  const Population = works[0];
+  const props = works[1];
     return (
       <div>
         <Header />
@@ -19,7 +20,7 @@ const Portfolio = () => {
           <Row>
             <SpBox>
               <LayoutCol>
-                <Project {...props} />
+                <Project {...Population} />
               </LayoutCol>
             </SpBox>
 
