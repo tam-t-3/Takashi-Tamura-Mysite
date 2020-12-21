@@ -24,7 +24,7 @@ const LayoutMain = styled.div`
 `;
 
 const LayoutMyIcon = styled.div`
-  margin-top: 32px;
+  margin-top: 64px;
 `;
 
 const fadeIn = keyframes`

@@ -68,7 +68,7 @@ const Row = styled.div`
 `;
 
 const LayoutRow = styled.div`
-  margin-top: 32px;
+  margin-top: 64px;
 `;
 
 const LayoutCol = styled.div`
@@ -77,10 +77,10 @@ const LayoutCol = styled.div`
 
 const SpBox = styled.div`
     ${sp`
-        display: none;
+        display: block;
     `}
     ${tab`
-        display: none;
+        display: block;
     `}
     ${pc`
         display: block;
@@ -101,10 +101,10 @@ const TabBox = styled.div`
 
 const PcBox = styled.div`
     ${sp`
-        display: block;
+        display: none;
     `}
     ${tab`
-        display: block;
+        display: none;
     `}
     ${pc`
         display: block;
