@@ -14,6 +14,7 @@ const Project: React.FC<Props> = ({ title, description, thumb, url }) => {
     <Layout
       href={url}
       target="_blank"
+      style={{color: "black"}}
     >
 
       <Title>{title}</Title>
