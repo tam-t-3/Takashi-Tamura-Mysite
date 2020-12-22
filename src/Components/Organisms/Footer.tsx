@@ -27,10 +27,11 @@ const Footer = () => {
 };
 
 const LayoutFooter = styled.div`
-width: 100%;
-padding: 32px 64px;
-box-sizing: border-box;
-`
+  font-size: 14px;
+  width: 100%;
+  padding: 32px 64px;
+  box-sizing: border-box;
+`;
 
 const LayoutLink = styled.div`
 `

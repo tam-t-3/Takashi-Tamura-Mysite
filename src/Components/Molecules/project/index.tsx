@@ -6,11 +6,15 @@ type Props = {
   title: string;
   description: string;
   thumb: string;
+  url: string;
 };
 
-const Project: React.FC<Props> = ({ title, description, thumb }) => {
+const Project: React.FC<Props> = ({ title, description, thumb, url }) => {
   return (
-    <Layout>
+    <Layout
+      href={url}
+      target="_blank"
+    >
 
       <Title>{title}</Title>
       <Description>{description}</Description>
@@ -20,7 +24,11 @@ const Project: React.FC<Props> = ({ title, description, thumb }) => {
   );
 };
 
-const Layout = styled.div`
+const Layout = styled.a`
+  text-decolation: none;
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const Title = styled.h3`

@@ -16,6 +16,7 @@ const Logo = () => {
 
 const Li = styled.li`
   display: inline;
+  font-size: 16px;
 `;
 
 export default Logo;
