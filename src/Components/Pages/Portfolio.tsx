@@ -72,7 +72,7 @@ const LayoutRow = styled.div`
 `;
 
 const LayoutCol = styled.div`
-  margin: 16px;
+  margin: 16px 48px;
 `;
 
 const SpBox = styled.div`
