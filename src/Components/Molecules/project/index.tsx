@@ -12,15 +12,16 @@ const Project: React.FC<Props> = ({ title, description, thumb }) => {
   return (
     <Layout>
 
-      <LiquidImg src={thumb} />
       <Title>{title}</Title>
       <Description>{description}</Description>
+      <LiquidImg src={thumb} />
       
     </Layout>
   );
 };
 
-const Layout = styled.div``;
+const Layout = styled.div`
+`;
 
 const Title = styled.h3`
   font-weight: normal;

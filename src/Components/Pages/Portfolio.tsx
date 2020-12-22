@@ -8,7 +8,8 @@ import PortfolioTitle from "../Atoms/PortfolioStrings/PortfolioTitle";
 import { sp, tab, pc } from "../../media";
 
 const Portfolio = () => {
-  const props = works[0];
+  const Population = works[0];
+  const props = works[1];
     return (
       <div>
         <Header />
@@ -19,7 +20,7 @@ const Portfolio = () => {
           <Row>
             <SpBox>
               <LayoutCol>
-                <Project {...props} />
+                <Project {...Population} />
               </LayoutCol>
             </SpBox>
 
@@ -67,7 +68,7 @@ const Row = styled.div`
 `;
 
 const LayoutRow = styled.div`
-  margin-top: 32px;
+  margin-top: 64px;
 `;
 
 const LayoutCol = styled.div`
@@ -76,10 +77,10 @@ const LayoutCol = styled.div`
 
 const SpBox = styled.div`
     ${sp`
-        display: none;
+        display: block;
     `}
     ${tab`
-        display: none;
+        display: block;
     `}
     ${pc`
         display: block;
@@ -100,10 +101,10 @@ const TabBox = styled.div`
 
 const PcBox = styled.div`
     ${sp`
-        display: block;
+        display: none;
     `}
     ${tab`
-        display: block;
+        display: none;
     `}
     ${pc`
         display: block;

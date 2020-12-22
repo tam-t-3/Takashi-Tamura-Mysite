@@ -1,19 +1,20 @@
-import thumb1 from "../assets/images/thumb1.jpg";
+import thumb from "../assets/images/thumb.jpg";
+import Population from "../assets/images/Population-Graph-App.png";
 
 export const works = [
   {
-    title: "MY 地図アプリ1",
-    description: "ここに地図アプリの簡単な説明、80文字くらいをいれる",
-    thumb: thumb1,
+    title: "Population-Graph-App",
+    description: "各国の人口数をReact / Rechartsで表示するアプリ",
+    thumb: Population,
   },
   {
-    title: "MY 地図アプリ2",
-    description: "ここに地図アプリの簡単な説明、80文字くらいをいれる",
-    thumb: thumb1,
+    title: "アプリケーション名(開発中)",
+    description: "アプリケーション説明",
+    thumb: thumb,
   },
   {
-    title: "MY 地図アプリ3",
-    description: "ここに地図アプリの簡単な説明、80文字くらいをいれる",
-    thumb: thumb1,
+    title: "開発中",
+    description: "開発中",
+    thumb: thumb,
   },
 ];
