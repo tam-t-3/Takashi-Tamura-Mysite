@@ -30,7 +30,7 @@ const TopTextSection: React.FC = () => {
           <p>{aboutTxt.skill.editor}</p>
         </InnerSection>
       </Section>
-    
+
     </TextSection>
   );
 };
@@ -53,17 +53,6 @@ const Section = styled.section`
 
 const ProfileLayout = styled.div`
   
-`
-
-const List = styled.ul`
-  max-width: 375px;
-  margin: 0 auto;
-  text-align: left;
-  list-style: none;
-`
-
-const ListItem = styled.li`
-  line-height: 2;
 `
 
 const InnerSection = styled.div`
