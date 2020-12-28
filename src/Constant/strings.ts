@@ -32,7 +32,7 @@ export const aboutTxt = {
     frontend: "HTML5 / CSS3 / JavaScript / TypeScript",
     framework: "React / Redux / Redux Saga / Styled Components",
     backend: "Firebase hosting / Firestore",
-    Source: "Git",
+    Source: "Git / Github",
     editor: "Vim / VScode / Terminal",
   },
 };
