@@ -1,22 +1,22 @@
 import React from "react";
+import styled, { keyframes } from "styled-components";
 import Footer from "../Organisms/Footer";
 import Header from "../Organisms/Header";
 import Project from "../Molecules/project";
 import { works } from "../../Constant/projects";
-import styled, { keyframes } from "styled-components";
 import PortfolioTitle from "../Atoms/PortfolioStrings/PortfolioTitle";
 import { sp, tab, pc } from "../../media";
 
 const Portfolio = () => {
   const Population = works[0];
   const props = works[1];
-    return (
-      <div>
-        <Header />
-        <FadeIn>
-          <PortfolioTitle />
+  return (
+    <div>
+      <Header />
+      <FadeIn>
+        <PortfolioTitle />
 
-          <LayoutRow>
+        <LayoutRow>
           <Row>
             <SpBox>
               <LayoutCol>
@@ -55,10 +55,10 @@ const Portfolio = () => {
               </LayoutCol>
             </PcBox>
           </Row>
-          </LayoutRow>
-        </FadeIn>
-        <Footer />
-      </div>
+        </LayoutRow>
+      </FadeIn>
+      <Footer />
+    </div>
   );
 };
 
@@ -76,10 +76,10 @@ const LayoutCol = styled.div`
 `;
 
 const SpBox = styled.div`
-    ${sp`
+  ${sp`
         display: block;
     `}
-    ${tab`
+  ${tab`
         display: block;
     `}
     ${pc`
@@ -88,10 +88,10 @@ const SpBox = styled.div`
 `;
 
 const TabBox = styled.div`
-    ${sp`
+  ${sp`
         display: none;
     `}
-    ${tab`
+  ${tab`
         display: block;
     `}
     ${pc`
@@ -100,10 +100,10 @@ const TabBox = styled.div`
 `;
 
 const PcBox = styled.div`
-    ${sp`
+  ${sp`
         display: none;
     `}
-    ${tab`
+  ${tab`
         display: none;
     `}
     ${pc`

@@ -6,9 +6,7 @@ type Props = {
 };
 
 const LinkAnimation: React.FC<Props> = ({ children }) => {
-  return (
-    <Li>{children}</Li>
-  );
+  return <Li>{children}</Li>;
 };
 
 const Li = styled.li`

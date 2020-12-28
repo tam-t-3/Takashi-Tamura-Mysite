@@ -1,11 +1,9 @@
 import React from "react";
-import { navigation } from "../../../Constant/strings";
 import styled from "styled-components";
+import { navigation } from "../../../Constant/strings";
 
 const PortfolioTitle = () => {
-  return (
-    <Title>{navigation.portfolio}</Title>
-  );
+  return <Title>{navigation.portfolio}</Title>;
 };
 
 const Title = styled.h1`

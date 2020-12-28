@@ -6,15 +6,13 @@ import MyIcon from "../../Atoms/MyPhoto";
 const TopMainSection: React.FC = () => {
   return (
     <LayoutMain>
-
       <FadeIn>
         <TopTitle />
       </FadeIn>
 
       <LayoutMyIcon>
-        <MyIcon /> 
+        <MyIcon />
       </LayoutMyIcon>
-
     </LayoutMain>
   );
 };

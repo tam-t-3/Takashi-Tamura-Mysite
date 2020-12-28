@@ -1,7 +1,7 @@
 import React from "react";
+import styled from "styled-components";
 import Logo from "../Atoms/Logo";
 import Humberger from "../Molecules/Humberger";
-import styled from "styled-components";
 
 const Header = () => {
   return (

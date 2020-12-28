@@ -1,9 +1,9 @@
 import React from "react";
+import styled, { keyframes } from "styled-components";
 import Footer from "../Organisms/Footer";
 import Header from "../Organisms/Header";
 import TopTextSection from "../Organisms/Top/TopTextSection";
 import TopMainSection from "../Organisms/Top/TopMainSection";
-import styled, { keyframes } from "styled-components";
 
 const Top = () => {
   return (

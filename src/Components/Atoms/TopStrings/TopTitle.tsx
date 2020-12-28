@@ -1,11 +1,11 @@
 import React from "react";
-import { aboutTxt } from "../../../Constant/strings";
 import styled from "styled-components";
+import { aboutTxt } from "../../../Constant/strings";
 
 const TopTitle = () => {
   return (
     <div>
-        <Title>{aboutTxt.myname}</Title>
+      <Title>{aboutTxt.myname}</Title>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
-import { aboutTxt } from "../../Constant/strings";
 import styled from "styled-components";
+import { aboutTxt } from "../../Constant/strings";
 import NavLink from "./LinkAnimation";
 
 const Mail = () => {

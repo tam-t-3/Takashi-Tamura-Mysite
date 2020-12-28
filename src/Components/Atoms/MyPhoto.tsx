@@ -20,6 +20,6 @@ const ProfileImg = styled.img`
   display: inline-block;
   border-radius: 50%;
   width: 240px;
-`
+`;
 
 export default MyIcon;

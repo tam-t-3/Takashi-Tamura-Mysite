@@ -9,7 +9,6 @@ const TriggerMenu: React.FC = ({}) => {
   const [isActive, setActive] = useState(false);
   return (
     <S.Layout>
-
       <S.Trigger onClick={() => setActive(!isActive)}>
         <MenuBar isActive={isActive} index={0} />
         <MenuBar isActive={isActive} index={1} />
@@ -29,17 +28,14 @@ const TriggerMenu: React.FC = ({}) => {
               <NavLink>{navigation.portfolio}</NavLink>
             </Link>
           </S.StyledLi>
-          
-          <a href="mailto:takashi.t.abc.20@gmail.com">
 
+          <a href="mailto:takashi.t.abc.20@gmail.com">
             <S.StyledLi>
               <NavLink>{navigation.contact}</NavLink>
             </S.StyledLi>
           </a>
-
         </div>
       )}
-      
     </S.Layout>
   );
 };
