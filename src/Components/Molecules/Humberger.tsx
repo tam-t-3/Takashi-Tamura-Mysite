@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import TriggerMenu from "../Atoms/Menu";
 
-const Humberger = () => {
+const Humberger: React.FC = () => {
   return (
     <NavDiv id="navArea">
       <TriggerMenu />

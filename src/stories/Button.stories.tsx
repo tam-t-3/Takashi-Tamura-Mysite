@@ -4,6 +4,7 @@ import { Story, Meta } from "@storybook/react/types-6-0";
 
 import { Button, ButtonProps } from "./Button";
 
+// eslint-disable-next-line @typescript-eslint/ban-types
 export default {
   title: "Example/Button",
   component: Button,

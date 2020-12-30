@@ -7,7 +7,7 @@ import { works } from "../../Constant/projects";
 import PortfolioTitle from "../Atoms/PortfolioStrings/PortfolioTitle";
 import { sp, tab, pc } from "../../media";
 
-const Portfolio = () => {
+const Portfolio: React.FC = () => {
   const Population = works[0];
   const props = works[1];
   return (

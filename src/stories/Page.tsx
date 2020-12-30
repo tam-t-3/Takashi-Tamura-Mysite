@@ -1,9 +1,16 @@
+/* eslint react/no-unescaped-entities: 0 */
+/* eslint prettier/prettier: 0 */
+/* eslint react/jsx-one-expression-per-line: 0 */
+/* eslint react/jsx-indent: 0 */
+/* eslint @typescript-eslint/indent: 0 */
+
 import React from "react";
 
 import { Header } from "./Header";
 import "./page.css";
 
 export interface PageProps {
+  // eslint-disable-next-line @typescript-eslint/ban-types
   user?: {};
   onLogin: () => void;
   onLogout: () => void;
@@ -72,8 +79,7 @@ export const Page: React.FC<PageProps> = ({
         .
       </p>
       <div className="tip-wrapper">
-        <span className="tip">Tip</span> Adjust the width of the canvas with the
-{" "}
+        <span className="tip">Tip</span> Adjust the width of the canvas with the{" "}
         <svg
           width="10"
           height="10"

@@ -33,6 +33,23 @@
         }
     },
     "rules": {
+        "import/no-extraneous-dependencies": ["error", {
+            "devDependencies": ["spec/**", "test/**", "tests/**", "**/__tests__/**"], // devDependenciesのimportを許可
+            "optionalDependencies": false
+          }],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+              "js": "never",
+              "jsx": "never",
+              "ts": "never",
+              "tsx": "never"
+            }
+         ],
+        "no-use-before-define": "off",
+        "react/jsx-props-no-spreading": "off",
+        "@typescript-eslint/no-use-before-define": "off",
         "@typescript-eslint/indent": ["error", 2],
         "@typescript-eslint/prefer-interface": "off",
         "react/jsx-filename-extension": [
@@ -40,6 +57,8 @@
         { "extensions": [".jsx", ".tsx"] }
         ],
         "react/prop-types": "off",
-        "spaced-comment": ["error", "always", { "markers": ["/ <reference"] }]
+        "spaced-comment": ["error", "always", { "markers": ["/ <reference"] }],
+        "no-empty-pattern": "off",
+        "import/no-unresolved": "off"
     }
 }

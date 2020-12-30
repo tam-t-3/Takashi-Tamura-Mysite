@@ -2,7 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { aboutTxt } from "../../../Constant/strings";
 
-const TopTitle = () => {
+interface Props {
+  aboutTxt: {
+    myname: string;
+  };
+}
+
+const TopTitle: React.FC<Props> = () => {
   return (
     <div>
       <Title>{aboutTxt.myname}</Title>

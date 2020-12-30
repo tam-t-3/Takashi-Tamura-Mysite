@@ -6,7 +6,7 @@ import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import Mail from "../Atoms/Mail";
 import NavLink from "../Atoms/LinkAnimation";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <LayoutFooter>
       <LayoutLink>

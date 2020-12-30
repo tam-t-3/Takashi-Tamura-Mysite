@@ -1,6 +1,6 @@
 import React from "react";
-import { action } from "@storybook/addon-actions";
-import { withKnobs, text, boolean, number } from "@storybook/addon-knobs";
+import { action } from "@storybook/addon-actions"; // eslint-disable-line import/no-extraneous-dependencies
+import { withKnobs } from "@storybook/addon-knobs"; // eslint-disable-line import/no-extraneous-dependencies
 import Button from "./Button";
 
 export default {
@@ -9,7 +9,10 @@ export default {
   decorators: [withKnobs],
 };
 
-export const Buttons = () => (
-  // @ts-ignore
+type Props = {
+  onClick: React.MouseEvent<HTMLButtonElement, MouseEvent>;
+};
+
+export const Buttons: React.FC<Props> = () => (
   <Button onClick={action("clicked")} text="Button" />
 );

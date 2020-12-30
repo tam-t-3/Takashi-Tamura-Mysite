@@ -5,7 +5,7 @@ import Header from "../Organisms/Header";
 import TopTextSection from "../Organisms/Top/TopTextSection";
 import TopMainSection from "../Organisms/Top/TopMainSection";
 
-const Top = () => {
+const Top: React.FC = () => {
   return (
     <div>
       <Header />

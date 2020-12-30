@@ -2,7 +2,13 @@ import React from "react";
 import styled from "styled-components";
 import { navigation } from "../../../Constant/strings";
 
-const PortfolioTitle = () => {
+interface Props {
+  navigation: {
+    portfolio: string;
+  };
+}
+
+const PortfolioTitle: React.FC<Props> = () => {
   return <Title>{navigation.portfolio}</Title>;
 };
 

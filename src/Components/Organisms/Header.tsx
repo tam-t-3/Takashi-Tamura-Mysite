@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Logo from "../Atoms/Logo";
 import Humberger from "../Molecules/Humberger";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <LayoutHeader>
       <Logo />

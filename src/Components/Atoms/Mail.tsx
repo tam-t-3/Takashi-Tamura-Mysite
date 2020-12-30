@@ -3,7 +3,13 @@ import styled from "styled-components";
 import { aboutTxt } from "../../Constant/strings";
 import NavLink from "./LinkAnimation";
 
-const Mail = () => {
+interface Props {
+  aboutTxt: {
+    mymail: string;
+  };
+}
+
+const Mail: React.FC<Props> = () => {
   return (
     <MailLi>
       <a href="mailto:takashi.t.abc.20@gmail.com">

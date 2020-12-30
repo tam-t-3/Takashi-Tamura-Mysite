@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import imgProfile from "../../assets/images/me.jpg";
 
-const MyIcon = () => {
+const MyIcon: React.FC = () => {
   return (
     <div>
       <LayoutImg>

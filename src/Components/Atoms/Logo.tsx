@@ -4,7 +4,13 @@ import styled from "styled-components";
 import NavLink from "./LinkAnimation";
 import { aboutTxt } from "../../Constant/strings";
 
-const Logo = () => {
+interface Props {
+  aboutTxt: {
+    myname: string;
+  };
+}
+
+const Logo: React.FC<Props> = () => {
   return (
     <Li>
       <Link to="/">
