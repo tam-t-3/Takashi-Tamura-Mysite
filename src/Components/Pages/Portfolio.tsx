@@ -1,3 +1,5 @@
+/* eslint @typescript-eslint/ban-ts-comment: 0 */
+
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import Footer from "../Organisms/Footer";
@@ -14,6 +16,7 @@ const Portfolio: React.FC = () => {
     <div>
       <Header />
       <FadeIn>
+        {/* @ts-ignore */}
         <PortfolioTitle />
 
         <LayoutRow>

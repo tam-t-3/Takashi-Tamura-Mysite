@@ -1,7 +1,9 @@
+/* eslint import/prefer-default-export: 0 */
+
 import styled from "styled-components";
 
 // メニューバーのスタイル、外部からの値を渡すことで、動的にスタイルを調整
-const StyledMenuBar = styled.span<{ transform: string; width: string }>`
+export const StyledMenuBar = styled.span<{ transform: string; width: string }>`
   display: inline-block;
   transition: all 0.4s;
   box-sizing: border-box;
@@ -26,5 +28,3 @@ const StyledMenuBar = styled.span<{ transform: string; width: string }>`
     width: ${({ width }) => width};
   }
 `;
-
-export default StyledMenuBar;

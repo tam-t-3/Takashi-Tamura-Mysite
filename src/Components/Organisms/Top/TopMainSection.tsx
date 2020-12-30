@@ -1,3 +1,5 @@
+/* eslint @typescript-eslint/ban-ts-comment: 0 */
+
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import TopTitle from "../../Atoms/TopStrings/TopTitle";
@@ -7,6 +9,7 @@ const TopMainSection: React.FC = () => {
   return (
     <LayoutMain>
       <FadeIn>
+        {/* @ts-ignore */}
         <TopTitle />
       </FadeIn>
 

@@ -1,8 +1,9 @@
+/* eslint @typescript-eslint/ban-ts-comment: 0 */
+
 import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
-
 import Mail from "../Atoms/Mail";
 import NavLink from "../Atoms/LinkAnimation";
 
@@ -26,6 +27,7 @@ const Footer: React.FC = () => {
         </LayoutIcon>
 
         <LayoutMail>
+          {/* @ts-ignore */}
           <Mail />
         </LayoutMail>
       </LayoutLink>

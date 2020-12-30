@@ -1,7 +1,8 @@
 import thumb from "../assets/images/thumb.jpg";
 import Population from "../assets/images/Population-Graph-App.png";
 
-const works = [
+// eslint-disable-next-line import/prefer-default-export
+export const works = [
   {
     title: "Population-Graph-App",
     description: "各国の人口数をReact / Rechartsで表示するアプリ",
@@ -21,5 +22,3 @@ const works = [
     url: "",
   },
 ];
-
-export default works;
