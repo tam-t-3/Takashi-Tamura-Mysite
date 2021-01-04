@@ -21,7 +21,7 @@ export const aboutTxt = {
   profile: `1987年生まれ、専門学校東京テクニカルカレッジ卒。
     新卒後は音楽業界でリハーサルスタジオの運営に携わる。
     ITエンジニアへ転職後、サーバー監視やNW機器の保守・運用と並行して
-    JavaScript、TypeScriptを中心にフロントエンド技術の学習をおこなっている。
+    JavaScript、TypeScriptを中心にフロントエンド技術の習得をおこなう。
     `,
   "about-detail": "",
   skills:
