@@ -10,8 +10,8 @@ export const Trigger = styled.a`
   transition: all 0.4s;
   box-sizing: border-box;
   position: relative;
-  width: 26px;
-  height: 19px;
+  width: 24px;
+  height: 24px;
   cursor: pointer;
 `;
 

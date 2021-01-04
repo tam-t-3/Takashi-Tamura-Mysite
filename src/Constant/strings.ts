@@ -18,10 +18,10 @@ export const subTitle = {
 export const aboutTxt = {
   myname: "TAKASHI TAMURA",
   mymail: "takashi.t.abc.20@gmail.com",
-  profile: `1987年生まれ、東京テクニカルカレッジ卒。
-    新卒後は音楽業界にてリハーサルスタジオの運営に携わる。
-    その後ITエンジニアへ転職、インフラエンジニアとしてサーバー監視やネットワーク機器の運用に携わる。
-    現在はJavaScript、TypeScriptを中心にフロントエンド技術の習得をおこなう。
+  profile: `1987年生まれ、専門学校東京テクニカルカレッジ卒。
+    新卒後は音楽業界でリハーサルスタジオの運営に携わる。
+    ITエンジニアへ転職後、サーバー監視やNW機器の保守・運用と並行して
+    JavaScript、TypeScriptを中心にフロントエンド技術の習得をおこなう。
     `,
   "about-detail": "",
   skills:

@@ -9,7 +9,7 @@ export const StyledMenuBar = styled.span<{ transform: string; width: string }>`
   box-sizing: border-box;
   position: absolute;
   left: 0;
-  height: 3px;
+  height: 2px;
   background-color: #000;
   border-radius: 3px;
   &:nth-of-type(1) {

@@ -21,11 +21,11 @@ const TopMainSection: React.FC = () => {
 };
 
 const LayoutMain = styled.div`
-  padding-top: 217px;
+  padding-top: 128px;
 `;
 
 const LayoutMyIcon = styled.div`
-  margin-top: 64px;
+  margin-top: 32px;
 `;
 
 const fadeIn = keyframes`
