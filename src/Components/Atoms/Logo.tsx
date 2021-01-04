@@ -10,7 +10,9 @@ const Logo = () => {
       <Li>
         <Link to="/">
           <NavLink>
+            <StyleImg>
             <LiquidImg src={logo} />
+            </StyleImg>
           </NavLink>
         </Link>
       </Li>
@@ -19,7 +21,10 @@ const Logo = () => {
 
 const Li = styled.li`
   display: inline;
-  font-size: 16px;
+`;
+
+const StyleImg = styled.div`
+  width: 32px;
 `;
 
 export default Logo;
