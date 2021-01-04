@@ -6,14 +6,13 @@ import { aboutTxt, subTitle } from "../../../Constant/strings";
 const TopTextSection: React.FC = () => {
   return (
     <TextSection>
-      
       <Section>
         <h2 className="about-section">{subTitle.about}</h2>
         <ProfileLayout>
           <TextAreaComp>{aboutTxt.profile}</TextAreaComp>
         </ProfileLayout>
       </Section>
-      
+
       <Section>
         <h2>{subTitle.skills}</h2>
         <InnerSection>
@@ -25,12 +24,11 @@ const TopTextSection: React.FC = () => {
           <p>{aboutTxt.skill.backend}</p>
           <InnerTitle>Source</InnerTitle>
           <p>{aboutTxt.skill.Source}</p>
-          
+
           <InnerTitle>Editor</InnerTitle>
           <p>{aboutTxt.skill.editor}</p>
         </InnerSection>
       </Section>
-    
     </TextSection>
   );
 };
@@ -49,31 +47,18 @@ const Section = styled.section`
   .about-section {
     margin-top: 48px;
   }
-`
+`;
 
-const ProfileLayout = styled.div`
-  
-`
-
-const List = styled.ul`
-  max-width: 375px;
-  margin: 0 auto;
-  text-align: left;
-  list-style: none;
-`
-
-const ListItem = styled.li`
-  line-height: 2;
-`
+const ProfileLayout = styled.div``;
 
 const InnerSection = styled.div`
   max-width: 375px;
   margin: 0 auto;
   text-align: left;
-`
+`;
 
 const InnerTitle = styled.h4`
   margin: 32px 0 8px 0;
-`
+`;
 
 export default TopTextSection;

@@ -6,8 +6,8 @@ import Portfolio from "./Components/Pages/Portfolio";
 
 const App: React.FC = () => (
   <BrowserRouter>
-    <Route exact path="/" component={Top}/>
-    <Route exact path="/portfolio" component={Portfolio}/>
+    <Route exact path="/" component={Top} />
+    <Route exact path="/portfolio" component={Portfolio} />
   </BrowserRouter>
 );
 

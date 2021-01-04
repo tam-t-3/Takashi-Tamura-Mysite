@@ -1,0 +1,64 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "settings": {
+        "import/resolver": {
+        "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+        }
+    },
+    "rules": {
+        "import/no-extraneous-dependencies": ["error", {
+            "devDependencies": ["spec/**", "test/**", "tests/**", "**/__tests__/**"], // devDependenciesのimportを許可
+            "optionalDependencies": false
+          }],
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+              "js": "never",
+              "jsx": "never",
+              "ts": "never",
+              "tsx": "never"
+            }
+         ],
+        "no-use-before-define": "off",
+        "react/jsx-props-no-spreading": "off",
+        "@typescript-eslint/no-use-before-define": "off",
+        "@typescript-eslint/indent": ["error", 2],
+        "@typescript-eslint/prefer-interface": "off",
+        "react/jsx-filename-extension": [
+        "error",
+        { "extensions": [".jsx", ".tsx"] }
+        ],
+        "react/prop-types": "off",
+        "spaced-comment": ["error", "always", { "markers": ["/ <reference"] }],
+        "no-empty-pattern": "off",
+        "import/no-unresolved": "off"
+    }
+}

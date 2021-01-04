@@ -1,25 +1,29 @@
+/* eslint @typescript-eslint/ban-ts-comment: 0 */
+
 import React from "react";
+import styled, { keyframes } from "styled-components";
 import Footer from "../Organisms/Footer";
 import Header from "../Organisms/Header";
 import Project from "../Molecules/project";
 import { works } from "../../Constant/projects";
-import styled, { keyframes } from "styled-components";
 import PortfolioTitle from "../Atoms/PortfolioStrings/PortfolioTitle";
 import { sp, tab, pc } from "../../media";
 
-const Portfolio = () => {
-  const props = works[0];
-    return (
-      <div>
-        <Header />
-        <FadeIn>
-          <PortfolioTitle />
+const Portfolio: React.FC = () => {
+  const Population = works[0];
+  const props = works[1];
+  return (
+    <div>
+      <Header />
+      <FadeIn>
+        {/* @ts-ignore */}
+        <PortfolioTitle />
 
-          <LayoutRow>
+        <LayoutRow>
           <Row>
             <SpBox>
               <LayoutCol>
-                <Project {...props} />
+                <Project {...Population} />
               </LayoutCol>
             </SpBox>
 
@@ -54,10 +58,10 @@ const Portfolio = () => {
               </LayoutCol>
             </PcBox>
           </Row>
-          </LayoutRow>
-        </FadeIn>
-        <Footer />
-      </div>
+        </LayoutRow>
+      </FadeIn>
+      <Footer />
+    </div>
   );
 };
 
@@ -67,19 +71,19 @@ const Row = styled.div`
 `;
 
 const LayoutRow = styled.div`
-  margin-top: 32px;
+  margin-top: 64px;
 `;
 
 const LayoutCol = styled.div`
-  margin: 16px;
+  margin: 16px 48px;
 `;
 
 const SpBox = styled.div`
-    ${sp`
-        display: none;
+  ${sp`
+        display: block;
     `}
-    ${tab`
-        display: none;
+  ${tab`
+        display: block;
     `}
     ${pc`
         display: block;
@@ -87,10 +91,10 @@ const SpBox = styled.div`
 `;
 
 const TabBox = styled.div`
-    ${sp`
+  ${sp`
         display: none;
     `}
-    ${tab`
+  ${tab`
         display: block;
     `}
     ${pc`
@@ -99,11 +103,11 @@ const TabBox = styled.div`
 `;
 
 const PcBox = styled.div`
-    ${sp`
-        display: block;
+  ${sp`
+        display: none;
     `}
-    ${tab`
-        display: block;
+  ${tab`
+        display: none;
     `}
     ${pc`
         display: block;

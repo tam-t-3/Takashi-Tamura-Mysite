@@ -1,3 +1,5 @@
+/* eslint import/prefer-default-export: 0 */
+
 import styled from "styled-components";
 
 // メニューバーのスタイル、外部からの値を渡すことで、動的にスタイルを調整

@@ -22,4 +22,5 @@ export const StyledUl = styled.ul`
 export const StyledLi = styled.li`
   text-align: right;
   margin-top: 8px;
+  font-size: 16px;
 `;

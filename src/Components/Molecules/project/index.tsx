@@ -6,21 +6,25 @@ type Props = {
   title: string;
   description: string;
   thumb: string;
+  url: string;
 };
 
-const Project: React.FC<Props> = ({ title, description, thumb }) => {
+const Project: React.FC<Props> = ({ title, description, thumb, url }) => {
   return (
-    <Layout>
-
-      <LiquidImg src={thumb} />
+    <Layout href={url} target="_blank" style={{ color: "black" }}>
       <Title>{title}</Title>
       <Description>{description}</Description>
-      
+      <LiquidImg src={thumb} />
     </Layout>
   );
 };
 
-const Layout = styled.div``;
+const Layout = styled.a`
+  text-decolation: none;
+  &:hover {
+    cursor: pointer;
+  }
+`;
 
 const Title = styled.h3`
   font-weight: normal;
