@@ -34,6 +34,8 @@ const TopTextSection: React.FC = () => {
 };
 
 const TextSection = styled.div`
+  white-space: pre-wrap;
+  font-size: 16px;
   max-width: 640px;
   text-align: center;
   margin: 0 auto;

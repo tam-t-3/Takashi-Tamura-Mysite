@@ -10,7 +10,7 @@ const LinkAnimation: React.FC<Props> = ({ children }) => {
 };
 
 const Li = styled.li`
-  color: black;
+  color: #262525;
   position: relative;
   display: inline-block;
   text-decoration: none;

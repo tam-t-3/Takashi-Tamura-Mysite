@@ -17,10 +17,12 @@ const TopTitle: React.FC<Props> = () => {
 };
 
 const Title = styled.h1`
+  font-weight: bold;
   text-align: center;
-  letter-spacing: 8px;
+  letter-spacing: 11px;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 24px;
+  color: #262525;
 `;
 
 export default TopTitle;

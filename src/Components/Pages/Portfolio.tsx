@@ -2,6 +2,7 @@
 
 import React from "react";
 import styled, { keyframes } from "styled-components";
+import { Helmet } from "react-helmet";
 import Footer from "../Organisms/Footer";
 import Header from "../Organisms/Header";
 import Project from "../Molecules/project";
@@ -14,6 +15,7 @@ const Portfolio: React.FC = () => {
   const props = works[1];
   return (
     <div>
+      <Helmet title={`${"Portfolio"}`} />
       <Header />
       <FadeIn>
         {/* @ts-ignore */}

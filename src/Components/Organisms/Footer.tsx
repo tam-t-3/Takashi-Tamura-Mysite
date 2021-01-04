@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
   return (
     <LayoutFooter>
       <LayoutLink>
-        <LayoutIcon href="https://twitter.com/@Takashi_Code" target="_blank">
+        <LayoutIcon href="https://twitter.com/@tk_Code_takashi" target="_blank">
           <NavLink>
             <FontAwesomeIcon icon={faTwitter} />
           </NavLink>
