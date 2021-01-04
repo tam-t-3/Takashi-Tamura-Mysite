@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import NavLink from "./LinkAnimation";
-import { aboutTxt } from "../../Constant/strings";
+import LiquidImg from "./LiquidImg";
+import logo from "../../assets/images/logo.svg";
 
 interface Props {
   aboutTxt: {
@@ -14,7 +15,11 @@ const Logo: React.FC<Props> = () => {
   return (
     <Li>
       <Link to="/">
-        <NavLink>{aboutTxt.myname}</NavLink>
+        <NavLink>
+          <StyleImg>
+            <LiquidImg src={logo} />
+          </StyleImg>
+        </NavLink>
       </Link>
     </Li>
   );
@@ -22,7 +27,10 @@ const Logo: React.FC<Props> = () => {
 
 const Li = styled.li`
   display: inline;
-  font-size: 16px;
+`;
+
+const StyleImg = styled.div`
+  width: 32px;
 `;
 
 export default Logo;
