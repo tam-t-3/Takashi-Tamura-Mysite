@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
+import { Helmet } from "react-helmet";
 import Footer from "../Organisms/Footer";
 import Header from "../Organisms/Header";
 import TopTextSection from "../Organisms/Top/TopTextSection";
@@ -8,6 +9,7 @@ import TopMainSection from "../Organisms/Top/TopMainSection";
 const Top: React.FC = () => {
   return (
     <div>
+      <Helmet title={`${"Top"}`} />
       <Header />
 
       <FadeIn>
