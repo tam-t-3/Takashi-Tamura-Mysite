@@ -1,14 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NavLink from "./LinkAnimation";
-import { aboutTxt } from "../../Constant/strings";
 import styled from "styled-components";
+import LiquidImg from "./LiquidImg";
+import logo from "../../assets/images/logo.svg";
 
 const Logo = () => {
   return (
       <Li>
         <Link to="/">
-          <NavLink>{aboutTxt.myname}</NavLink>
+          <NavLink>
+            <LiquidImg src={logo} />
+          </NavLink>
         </Link>
       </Li>
   );
