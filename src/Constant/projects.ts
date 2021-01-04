@@ -10,8 +10,8 @@ export const works = [
     url: "https://basic-population.web.app",
   },
   {
-    title: "アプリケーション名(開発中)",
-    description: "アプリケーション説明",
+    title: "Undeveloped",
+    description: "Explanation",
     thumb,
     url: "",
   },

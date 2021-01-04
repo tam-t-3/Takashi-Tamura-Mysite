@@ -20,7 +20,7 @@ const Title = styled.h1`
   text-align: center;
   letter-spacing: 8px;
   margin: 0 auto;
-  font-size: 20px;
+  font-size: 24px;
   color: #262525;
 `;
 
