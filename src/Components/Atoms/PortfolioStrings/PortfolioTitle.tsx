@@ -13,6 +13,7 @@ const PortfolioTitle: React.FC<Props> = () => {
 };
 
 const Title = styled.h1`
+  color: #262525;
   text-align: center;
   margin: 0 auto;
   letter-spacing: 6px;

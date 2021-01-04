@@ -27,9 +27,12 @@ const Layout = styled.a`
 `;
 
 const Title = styled.h3`
+  color: #262525;
   font-weight: normal;
 `;
 
-const Description = styled.p``;
+const Description = styled.p`
+  color: #262525;
+`;
 
 export default Project;

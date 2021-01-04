@@ -30,7 +30,7 @@ const Li = styled.li`
 `;
 
 const StyleImg = styled.div`
-  width: 32px;
+  width: 26px;
 `;
 
 export default Logo;

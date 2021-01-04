@@ -21,6 +21,7 @@ const Title = styled.h1`
   letter-spacing: 8px;
   margin: 0 auto;
   font-size: 20px;
+  color: #262525;
 `;
 
 export default TopTitle;
