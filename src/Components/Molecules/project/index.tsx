@@ -11,16 +11,10 @@ type Props = {
 
 const Project: React.FC<Props> = ({ title, description, thumb, url }) => {
   return (
-    <Layout
-      href={url}
-      target="_blank"
-      style={{color: "black"}}
-    >
-
+    <Layout href={url} target="_blank" style={{ color: "black" }}>
       <Title>{title}</Title>
       <Description>{description}</Description>
       <LiquidImg src={thumb} />
-      
     </Layout>
   );
 };

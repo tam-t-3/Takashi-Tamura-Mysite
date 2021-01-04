@@ -1,11 +1,15 @@
 import React from "react";
-import { navigation } from "../../../Constant/strings";
 import styled from "styled-components";
+import { navigation } from "../../../Constant/strings";
 
-const PortfolioTitle = () => {
-  return (
-    <Title>{navigation.portfolio}</Title>
-  );
+interface Props {
+  navigation: {
+    portfolio: string;
+  };
+}
+
+const PortfolioTitle: React.FC<Props> = () => {
+  return <Title>{navigation.portfolio}</Title>;
 };
 
 const Title = styled.h1`

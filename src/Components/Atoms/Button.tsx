@@ -1,10 +1,16 @@
 import React from "react";
 
-//@ts-ignore
-const Button = ({onClick, text}) => {
+interface Props {
+  text: string;
+  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+}
+
+const Button: React.FC<Props> = ({ onClick, text }) => {
   return (
-  <button onClick={onClick}>{text}</button>
-  )
+    <button type="button" onClick={onClick}>
+      {text}
+    </button>
+  );
 };
 
 export default Button;

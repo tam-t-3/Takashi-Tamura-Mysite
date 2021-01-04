@@ -1,22 +1,36 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import NavLink from "./LinkAnimation";
-import { aboutTxt } from "../../Constant/strings";
 import styled from "styled-components";
+import NavLink from "./LinkAnimation";
+import LiquidImg from "./LiquidImg";
+import logo from "../../assets/images/logo.svg";
 
-const Logo = () => {
+interface Props {
+  aboutTxt: {
+    myname: string;
+  };
+}
+
+const Logo: React.FC<Props> = () => {
   return (
-      <Li>
-        <Link to="/">
-          <NavLink>{aboutTxt.myname}</NavLink>
-        </Link>
-      </Li>
+    <Li>
+      <Link to="/">
+        <NavLink>
+          <StyleImg>
+            <LiquidImg src={logo} />
+          </StyleImg>
+        </NavLink>
+      </Link>
+    </Li>
   );
 };
 
 const Li = styled.li`
   display: inline;
-  font-size: 16px;
+`;
+
+const StyleImg = styled.div`
+  width: 32px;
 `;
 
 export default Logo;
