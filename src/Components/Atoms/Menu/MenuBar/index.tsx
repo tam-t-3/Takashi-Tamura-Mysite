@@ -13,9 +13,9 @@ const MenuBar: React.FC<Props> = ({ isActive, index }) => {
 };
 
 const after: { transform: string; width: string }[] = [
-  { transform: "translate3d(1px, 5px, 0) rotate(405deg);", width: "45%" },
+  { transform: "translate3d(1.2px, 5px, 0) rotate(405deg);", width: "45%" },
   { transform: "translate3d(-1px, 0, 0) rotate(-45deg);", width: "26px" },
-  { transform: "translate3d(11px, -4.5px, 0) rotate(405deg);", width: "45%" },
+  { transform: "translate3d(11.5px, -4.7px, 0) rotate(405deg);", width: "45%" },
 ];
 
 const before = [
