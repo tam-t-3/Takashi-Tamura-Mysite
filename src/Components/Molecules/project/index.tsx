@@ -7,15 +7,27 @@ type Props = {
   description: string;
   thumb: string;
   url: string;
+  github: string;
 };
 
-const Project: React.FC<Props> = ({ title, description, thumb, url }) => {
+const Project: React.FC<Props> = ({
+  title,
+  description,
+  thumb,
+  url,
+  github,
+}) => {
   return (
-    <Layout href={url} target="_blank" style={{ color: "black" }}>
-      <Title>{title}</Title>
-      <Description>{description}</Description>
-      <LiquidImg src={thumb} />
-    </Layout>
+    <>
+      <Layout href={url} target="_blank" style={{ color: "black" }}>
+        <Title>{title}</Title>
+        <Description>{description}</Description>
+        <LiquidImg src={thumb} />
+      </Layout>
+      <A href={github} target="_blank">
+        {github}
+      </A>
+    </>
   );
 };
 
@@ -31,5 +43,9 @@ const Title = styled.h3`
 `;
 
 const Description = styled.p``;
+
+const A = styled.a`
+  color: black;
+`;
 
 export default Project;
