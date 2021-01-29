@@ -24,12 +24,9 @@ export const aboutTxt = {
     JavaScript、TypeScriptを中心にフロントエンド技術の習得をおこなう。
     `,
   "about-detail": "",
-  skills:
-    "HTML5 / CSS3 / JavaScript / TypeScript / Firebase / Git / GitHub / Terminal / Vim / VSCode",
-  framework: "React / Redux / Redux Saga / Styled Components",
   skill: {
     frontend: "HTML5 / CSS3 / JavaScript / TypeScript",
-    framework: "React / Redux / Redux Saga / Styled Components",
+    framework: "React / Redux / Redux-saga / Styled-components",
     backend: "Firebase hosting / Firestore",
     Source: "Git / Github",
     editor: "Vim / VScode / Terminal",
