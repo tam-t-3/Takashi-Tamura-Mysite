@@ -24,9 +24,10 @@ const TopTextSection: React.FC = () => {
           <p>{aboutTxt.skill.backend}</p>
           <InnerTitle>Source</InnerTitle>
           <p>{aboutTxt.skill.Source}</p>
-
           <InnerTitle>Editor</InnerTitle>
           <p>{aboutTxt.skill.editor}</p>
+          <InnerTitle>Linux</InnerTitle>
+          <p>{aboutTxt.skill.Linux}</p>
         </InnerSection>
       </Section>
     </TextSection>
@@ -54,7 +55,7 @@ const Section = styled.section`
 const ProfileLayout = styled.div``;
 
 const InnerSection = styled.div`
-  max-width: 375px;
+  max-width: 480px;
   margin: 0 auto;
   text-align: left;
 `;
