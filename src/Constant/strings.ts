@@ -19,7 +19,7 @@ export const aboutTxt = {
   myname: "TAKASHI TAMURA",
   mymail: "takashi.t.abc.20@gmail.com",
   profile: `1987年生まれ、専門学校東京テクニカルカレッジ卒。
-    新卒後は音楽業界にてリハーサルスタジオの運営に従事し、現在はITエンジニアとして企業向けクラウドサービスの保守、運用に従事。2020年5月からプログラミングを学習し、JavaScript、TypeScriptを中心にフロントエンド技術の習得に努力する。
+    新卒後は音楽業界にてリハーサルスタジオの運営に従事し、現在はITエンジニアとして企業向けクラウドサービスの運用に従事。
     `,
   "about-detail": "",
   skill: {
@@ -27,7 +27,9 @@ export const aboutTxt = {
     framework: "React / Redux / Redux-saga / Styled-Components /  Material-ui",
     backend: "Firebase ( Cloud Firestore・Firebase Authentication )",
     Source: "Git / Github",
+    Linux: "chmod, chown, cron, loggerの実務経験",
+    AWS: "AWS Amplify",
     editor: "VScode",
-    Linux: "現職にてchmod, chown, cron, loggerを利用",
+    VMware: "vSphere Client",
   },
 };
