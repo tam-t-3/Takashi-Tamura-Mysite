@@ -26,8 +26,12 @@ const TopTextSection: React.FC = () => {
           <p>{aboutTxt.skill.Source}</p>
           <InnerTitle>Editor</InnerTitle>
           <p>{aboutTxt.skill.editor}</p>
+          <InnerTitle>AWS</InnerTitle>
+          <p>{aboutTxt.skill.AWS}</p>
           <InnerTitle>Linux</InnerTitle>
           <p>{aboutTxt.skill.Linux}</p>
+          <InnerTitle>VMware</InnerTitle>
+          <p>{aboutTxt.skill.VMware}</p>
         </InnerSection>
       </Section>
     </TextSection>
