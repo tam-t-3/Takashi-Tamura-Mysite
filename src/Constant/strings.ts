@@ -27,7 +27,9 @@ export const aboutTxt = {
     framework: "React / Redux / Redux-saga / Styled-Components /  Material-ui",
     backend: "Firebase ( Cloud Firestore・Firebase Authentication )",
     Source: "Git / Github",
+    Linux: "chmod, chown, cron, loggerの実務経験",
+    AWS: "AWS Amplify",
     editor: "VScode",
-    Linux: "現職にてchmod, chown, cron, loggerを利用",
+    VMware: "vSphere Client",
   },
 };
