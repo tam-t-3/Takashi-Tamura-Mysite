@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
         </LayoutIcon>
 
         <LayoutIcon
-          href="https://www.instagram.com/takashi_gram.20/"
+          href="https://www.instagram.com/takashi.t.20/"
           target="_blank"
         >
           <NavLink>
